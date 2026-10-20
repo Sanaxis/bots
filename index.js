@@ -26,6 +26,9 @@ const db = require('./database.js');
 const configPath = path.join(__dirname, 'config.json');
 let config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
+// Render ortam değişkeninden Discord token'ını al
+config.token = process.env.DISCORD_TOKEN || config.token;
+
 // Discord Client kurulumu
 const client = new Client({
   intents: [
