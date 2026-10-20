@@ -1,0 +1,12 @@
+{
+  "name": "discord-community-bot",
+  "version": "1.0.0",
+  "description": "Discord Kayit, Seviye, Rol Alma ve Destekci Renk Botu",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0"
+  }
+}
