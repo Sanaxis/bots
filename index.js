@@ -18,10 +18,16 @@ const {
   ChannelType,
   AttachmentBuilder
 } = require('discord.js');
+
+const {
+  joinVoiceChannel,
+  VoiceConnectionStatus,
+  entersState
+} = require('@discordjs/voice');
+
 const fs = require('node:fs');
 const path = require('node:path');
 const db = require('./database.js');
-
 // Config dosyasını yükle
 const configPath = path.join(__dirname, 'config.json');
 let config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
@@ -550,6 +556,19 @@ client.once('clientReady', async () => {
   console.log(`🤖 Bot Aktif: ${client.user.tag}`);
   console.log(`🌐 Sunucu Sayısı: ${client.guilds.cache.size}`);
   console.log(`========================================`);
+
+const channel = await client.channels.fetch('1557437302588973127');
+
+if (channel && channel.isVoiceBased()) {
+  joinVoiceChannel({
+    channelId: channel.id,
+    guildId: channel.guild.id,
+    adapterCreator: channel.guild.voiceAdapterCreator,
+    selfDeaf: true
+  });
+
+  console.log(`Ses kanalına bağlandı: ${channel.name}`);
+}
 
   client.user.setActivity('Sunucuyu & Rolleri', { type: 3 }); // Watching
 
