@@ -1,73 +1,64 @@
-
-module.exports = {
-  token: process.env.DISCORD_TOKEN || "",
-  clientId: "1561115375561867324",
-  guildId: "1377700944464318554",
-
-  channels: {
-    welcome: "1530174626368323649",
-    register: "1557456034551824414",
-    roleSelect: "1557441800581550160",
-    supporter: "1557442045101080666",
-    levelLog: "1561120379207032863",
-    suggestionPanel: "1557442292988514365",
-    suggestionLog: "1561550196335317084",
-    announcement: "1557440914467852408",
-    staffAppPanel: "1561547411011403857",
-    staffAppReview: "1561877085067280384",
-    staffAppResults: "1561872568628019200",
-    staffComplaintPanel: "1561547528858505326",
-    ticketLog: "1561884749562118217"
+{
+  "token": "",
+  "clientId": "1561115375561867324",
+  "guildId": "1377700944464318554",
+  "channels": {
+    "welcome": "1530174626368323649",
+    "register": "1557456034551824414",
+    "roleSelect": "1557441800581550160",
+    "supporter": "1557442045101080666",
+    "levelLog": "1561120379207032863",
+    "suggestionPanel": "1557442292988514365",
+    "suggestionLog": "1561550196335317084",
+    "announcement": "1557440914467852408",
+    "staffAppPanel": "1561547411011403857",
+    "staffAppReview": "1561877085067280384",
+    "staffAppResults": "1561872568628019200",
+    "staffComplaintPanel": "1561547528858505326",
+    "ticketLog": "1561884749562118217"
   },
-
-  roles: {
-    unregistered: "1377710611416354997",
-    registered: "1557432848561209477",
-    booster: "1378815778765148252",
-    staffPending: "1561548099921510430",
-    staffAccepted: "1561548113091502160",
-    staffRejected: "1561548115125997578",
-
-    gender: {
-      male: "1557447740605341707",
-      female: "1557447587596992604"
+  "roles": {
+    "unregistered": "1377710611416354997",
+    "registered": "1557432848561209477",
+    "booster": "1378815778765148252",
+    "staffPending": "1561548099921510430",
+    "staffAccepted": "1561548113091502160",
+    "staffRejected": "1561548115125997578",
+    "gender": {
+      "male": "1557447740605341707",
+      "female": "1557447587596992604"
     },
-
-    playstyle: {
-      legal: "1557447574682869880",
-      illegal: "1557447253596045393",
-      both: "1561116233808744598"
+    "playstyle": {
+      "legal": "1557447574682869880",
+      "illegal": "1557447253596045393",
+      "both": "1561116233808744598"
     },
-
-    notifications: {
-      youtube: "1557822243302539264",
-      giveaway: "1557447259556159539",
-      event: "1557447251817668638"
+    "notifications": {
+      "youtube": "1557822243302539264",
+      "giveaway": "1557447259556159539",
+      "event": "1557447251817668638"
     },
-
-    colors: [
-      { id: "1557457613673734155", label: "Crazy Red", emoji: "🔴" },
-      { id: "1557458338306850887", label: "Bright Purple", emoji: "🟣" },
-      { id: "1557457616899285083", label: "Pinky Purple", emoji: "🌸" },
-      { id: "1557457620204265623", label: "Crazy Orange", emoji: "🟠" },
-      { id: "1557458340899070002", label: "Bright Yellow", emoji: "🟡" },
-      { id: "1557457622813114500", label: "Pale Yellow", emoji: "🌕" },
-      { id: "1557458335635218482", label: "Medium Green", emoji: "🟢" },
-      { id: "1557457609295138866", label: "Light Green", emoji: "🍏" },
-      { id: "1557458055195660459", label: "Dark Blue", emoji: "🔵" },
-      { id: "1557458062598475798", label: "Light Blue", emoji: "🧊" },
-      { id: "1557458052905697340", label: "Light Cyan", emoji: "💧" }
+    "colors": [
+      { "id": "1557457613673734155", "label": "Crazy Red", "emoji": "🔴" },
+      { "id": "1557458338306850887", "label": "Bright Purple", "emoji": "🟣" },
+      { "id": "1557457616899285083", "label": "Pinky Purple", "emoji": "🌸" },
+      { "id": "1557457620204265623", "label": "Crazy Orange", "emoji": "🟠" },
+      { "id": "1557458340899070002", "label": "Bright Yellow", "emoji": "🟡" },
+      { "id": "1557457622813114500", "label": "Pale Yellow", "emoji": "🌕" },
+      { "id": "1557458335635218482", "label": "Medium Green", "emoji": "🟢" },
+      { "id": "1557457609295138866", "label": "Light Green", "emoji": "🍏" },
+      { "id": "1557458055195660459", "label": "Dark Blue", "emoji": "🔵" },
+      { "id": "1557458062598475798", "label": "Light Blue", "emoji": "🧊" },
+      { "id": "1557458052905697340", "label": "Light Cyan", "emoji": "💧" }
     ],
-
-    supporterCategories: [
-      { id: "1557854110940794910", label: "ㅤ", name: "wing", emoji: "1561134448559390790" },
-      { id: "1557854114354823230", label: "ㅤ", name: "thanksgiving", emoji: "1558147651520692254" },
-      { id: "1557854116741513266", label: "ㅤ", name: "legendary", emoji: "1558147601570988145" },
-      { id: "1557854112685625344", label: "ㅤ", name: "Grow 4 Good", emoji: "1558147501322797207" },
-      { id: "1557854108516491354", label: "ㅤ", name: "mentor", emoji: "1558147548273844286" }
+    "supporterCategories": [
+      { "id": "1557854110940794910", "label": "ㅤ", "name": "wing", "emoji": "1561134448559390790" },
+      { "id": "1557854114354823230", "label": "ㅤ", "name": "thanksgiving", "emoji": "1558147651520692254" },
+      { "id": "1557854116741513266", "label": "ㅤ", "name": "legendary", "emoji": "1558147601570988145" },
+      { "id": "1557854112685625344", "label": "ㅤ", "name": "Grow 4 Good", "emoji": "1558147501322797207" },
+      { "id": "1557854108516491354", "label": "ㅤ", "name": "mentor", "emoji": "1558147548273844286" }
     ],
-
-    levels: {
+    "levels": {
       "5": "1557433392255991808",
       "10": "1557433393828991098",
       "20": "1557433390356242643",
@@ -81,10 +72,9 @@ module.exports = {
       "100": "1557434693106798683"
     }
   },
-
-  levelSettings: {
-    xpPerMessage: 5,
-    xpPerVoiceMinute: 3,
-    messageCooldownSeconds: 10
+  "levelSettings": {
+    "xpPerMessage": 5,
+    "xpPerVoiceMinute": 3,
+    "messageCooldownSeconds": 10
   }
-};
+}
